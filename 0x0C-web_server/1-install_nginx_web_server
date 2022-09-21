@@ -21,7 +21,7 @@ events {
     echo "Hello World!" > \
 	/var/www/school/index.html
     service nginx start
-    if [ $? -ne 0 ]
+    if $? -ne 0
     then
 	"Problem starting nginx"
 	exit 1
