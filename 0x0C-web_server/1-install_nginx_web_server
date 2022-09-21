@@ -23,7 +23,7 @@ events {
     service nginx start
     if [ $? -ne 0 ]
     then
-	"Problem starting nginx"
+    echo "Problem starting nginx"
 	exit 1
     fi
 else
