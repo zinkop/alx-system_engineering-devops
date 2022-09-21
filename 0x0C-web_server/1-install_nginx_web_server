@@ -23,7 +23,7 @@ new_config=\
 "
 
 echo "$new_config" > /etc/nginx/sites-available/default
-if "$(pgrep nginx)" -le 0;
+if [ "$(pgrep nginx)" -le 0 ];
 then
     service nginx start
 else
